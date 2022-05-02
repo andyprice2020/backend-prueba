@@ -6,12 +6,6 @@ pipeline {
         }
     }
     stages {
-        stage('Code') {
-            steps {
-                git 'https://github.com/andyprice2020/backend-prueba.git'
-                sh 'mvn test'
-            }
-        }
         stage('Test') {
             steps {
                 sh 'mvn test'
